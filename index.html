@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KD Sostro</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+       		
+        <link rel = "stylesheet" href="/scripts/bootstrap.js" type="text/javascript">
+        <link rel = "stylesheet" href="/scripts/bootstrap.css" type="text/css">
+        <link rel = "stylesheet" href="/scripts/css.css" type="text/css">
+	
+	</head>
+	
+    <body>
+
+      <div id="top">
+                      <!--     SLIDER      -->
+            <img src="assets/slike/slider.jpg" class="slider fadeout">
+                      
+                      <!--     MENI        -->
+      
+          <div class="gor">
+          		<ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="#!">DOMOV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">DOGODKI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">GALERIJA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">KONTAKT</a>
+            </li>
+          </ul>
+          </div>
+      </div>
+		
+		
+		        <!-- osrednji del strani  -->
+
+    		      <div class="row">
+        	      
+        	      <div class="col-md-9 col-sm-7"  id="glavnidel">
+        	       
+        	        <div id="sporocilo">
+        	            <p>Konj je samo eden pravi! Trenutno mislim, da se skriva v tvoji glavi.</p>
+        	        </div>
+        	        
+        	       <div id="oklubu">
+        	            <p>Smo društvo, smo prijatelji konj! Dejavni smo na področju udeleževanja na dogodkih s konji doma, kakor tudi po celotni Sloveniji, prav tako prirejamo dogodke. Najbolj znani so blagoslov konj za sv. Štefana na Veliki Dobravi, spomladansko jurjevanje na Selih in pa vsakoletni enodnevni pohod društva v sodelovanju z sosednjimi društvi. Društvo šteje preko 100 članov, kogar zanima naše društvo vas vabimo, da se nam pridružite.</p>
+        	       </div>
+        	       <div id="opisklubadiv">
+        	       <img src="/assets/slike/kdsostro.jpg" id="opisdrustva"></img>
+        	       </div>
+        	        
+        	      </div>
+        	      
+    	      
+   		        <!--      naslednji dogodek       -->
+		        
+		        
+		        
+		        <!--      Koledar         --> 	      
+    	      
+    	      <div class="col-md-3 col-sm-5" id="desnastran">
+    	        
+
+<div id="sporocilocol">
+
+    <p>16.2.2018</p>
+    <a href=#><p>KONJENIŠKI DAN</p></a>
+    <p id="sporocilotext" class="mySlides w3-animate-top rolldown">Vabljeni na konjeniški dan ...</p>
+
+</div>
+
+    	        
+    		      <iframe src="https://calendar.google.com/calendar/embed?showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=4ln5au361t9nvflseaoniljha8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Europe%2FBelgrade" style="border-width:0" width="100%" height="305" frameborder="0" scrolling="no"></iframe>
+            </div>
+            
+          </div>
+
+		
+
+		        
+		        
+		        
+		        <!--     Noga             -->
+		        
+<footer style="background-color: red;">
+  <p class="noga">2018</p>
+  <p class="noga">Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
+
+		
+
+
+    
+<script>
+var p1="Vabljeni na konjeniški dan ...";
+var p2="Vabljeni na konjeniški dan, ki ga gostimo v sostrem. Odprto tekmovanje upreg, razstava konj, hrana in pijača!";
+var opisdogodka = document.getElementById('sporocilocol');
+        opisdogodka.addEventListener('click', function (event) {
+          var spor= document.getElementById("sporocilotext");
+          
+          if(spor.innerHTML==p1){
+            console.log("sprosen");
+            spor.innerHTML=p2;
+            spor.style.WebkitAnimation = "rolldown 1s 1 ease-out"; // Code for Chrome, Safari and Opera
+            spor.style.animation = "rolldown 1s 1 ease-out";       // Standard syntax
+            var novspor = spor.cloneNode(true);
+            spor.parentNode.replaceChild(novspor, spor);
+            
+          }else{
+            spor.innerHTML=p1;
+            spor.style.WebkitAnimation = "rollup 1s ease-out"; // Code for Chrome, Safari and Opera
+            spor.style.animation = "rollup 1s 1 ease-out";       // Standard syntax
+            var novspor = spor.cloneNode(true);
+            spor.parentNode.replaceChild(novspor, spor);
+          }
+        });
+</script>
+	</body>
+</html>

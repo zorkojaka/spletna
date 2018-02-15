@@ -1,0 +1,183 @@
+
+p{
+    color: black;
+    text-align: center;
+    font-size: 200%;
+}
+
+body {
+	font-family:myfont;
+    min-height: 100%;
+    min-width: 100%;
+    position: static;
+    
+    
+
+}
+
+
+
+.row{max-width: 100%;}
+
+.container{
+    margin: 0;
+    width: 100%;
+}
+
+.gor{
+    margin-top: -3em;
+   
+}
+
+.nav-item{ background-color: black;}
+
+.gor li a{
+    color: white;
+}
+
+#sporocilo p{
+}
+
+#oklubu p{
+}
+
+#sporocilocol{
+    background-color: red;
+    position: relative;
+}
+
+#sporocilotext{
+    position: relative;
+}
+
+#nextdog{
+    background-color: orange;
+    
+}
+
+#desnastran{
+    background-color: blue;    
+    border-color: green;
+    border-style: solid;
+    border-image-width: 3px;
+    border-top-width: 2px;
+}
+
+
+
+#opisklubadiv{
+    width: 60%;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#top{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.nav{
+    background-color: red;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;    
+}
+
+
+
+
+
+.slider{
+    margin: 0;
+    height: auto;
+    position: relative;
+    right: 100%;
+    border-bottom-color: green;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+
+
+
+
+.fadeout {
+  -webkit-animation-name: fadeout;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: fadeout;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes fadeout {
+    0%   {right: 100%}
+    10%  {right: 75%;}
+    13%  {right: 75%;}
+    23%  {right: 50%;}
+    26%  {right: 50%;}
+    36%  {right: 25%}
+    39%  {right: 25%}
+    49%  {right: 0%}
+    52%  {right: 0%}
+    62%  {right: 25%}
+    65%  {right: 25%}
+    72%  {right: 50%}
+    75%  {right: 50%}
+    85% {right: 75%;}
+    88% {right: 75%;}
+    98% {right: 100%}
+    100% {right: 100%;}
+}
+
+@keyframes fadeout {
+    0%   {right: 100%}
+    10%  {right: 75%;}
+    13%  {right: 75%;}
+    23%  {right: 50%;}
+    26%  {right: 50%;}
+    36%  {right: 25%}
+    39%  {right: 25%}
+    49%  {right: 0%}
+    52%  {right: 0%}
+    62%  {right: 25%}
+    65%  {right: 25%}
+    72%  {right: 50%}
+    75%  {right: 50%}
+    85% {right: 75%;}
+    88% {right: 75%;}
+    98% {right: 100%}
+    100% {right: 100%;}
+}
+
+
+
+
+
+@-webkit-keyframes rolldown {
+    0%   {top: -10px}
+    100% {top: 0px;}
+}
+
+@keyframes rolldown {
+    0%   {top: -10px}
+    100% {top: 0px;}
+}
+
+@-webkit-keyframes rollup {
+    0%   {top: 10px}
+    100% {top: 0px;}
+}
+
+@keyframes rollup {
+    0%   {top: 10px}
+    100% {top: 0px;}
+}
+
